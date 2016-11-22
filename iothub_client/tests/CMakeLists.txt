@@ -39,6 +39,7 @@ if(${use_amqp})
     add_subdirectory(uamqp_messaging_ut)
     add_subdirectory(iothubtransport_amqp_common_ut)
     add_subdirectory(iothubtransportamqp_methods_ut)
+    add_subdirectory(iothubtransport_amqp_messenger_ut)
     add_subdirectory(iothubtransportamqp_ut)
     
     if(${use_wsio})
