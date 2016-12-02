@@ -13,7 +13,7 @@ cd $build_root
 # -- helper subroutines 
 # -----------------------------------------------------------------------------
 checkExists() {
-    echo running dpkg verify
+    echo running curl version
 
     if $1 --version #2>/dev/null;
     then
@@ -28,12 +28,12 @@ checkExists() {
 # the following programs work: -- curl build-essential(g++,gcc,make) 
 # cmake git 
 # -----------------------------------------------------------------------------
-checkExists curl 
-checkExists g++ 
-checkExists gcc 
-checkExists make 
-checkExists cmake 
-checkExists git
+#checkExists curl 
+#checkExists g++ 
+#checkExists gcc 
+#checkExists make 
+#checkExists cmake 
+#checkExists git
 
 # ----------------------------------------------------------------------------- 
 # -- Check for RPiTools directory.
