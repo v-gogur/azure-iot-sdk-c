@@ -14,8 +14,8 @@ cd $build_root
 # -----------------------------------------------------------------------------
 checkExists() {
     echo running dpkg verify
-    
-    if dpkg --verify $1 #2>/dev/null;
+
+    if $1 --version #2>/dev/null;
     then
         return 1
     else
