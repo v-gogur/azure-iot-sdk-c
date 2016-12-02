@@ -13,7 +13,7 @@ cd $build_root
 # -- helper subroutines 
 # -----------------------------------------------------------------------------
 checkExists() {
-    if hash $1 2>/dev/null;
+    if dpkg --verify $1 2>/dev/null;
     then
         return 1
     else
