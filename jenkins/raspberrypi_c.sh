@@ -38,6 +38,8 @@ checkExists() {
 # ----------------------------------------------------------------------------- 
 # -- Check for RPiTools directory.
 # -----------------------------------------------------------------------------
+echo Folder "$install_root/RPiTools"
+
 if [ ! -d "$install_root/RPiTools" ];
 then
    echo ---------- Raspberry Pi tool-chain absent ----------
